@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'app',
 ]
 
 MIDDLEWARE = [
@@ -75,10 +76,15 @@ WSGI_APPLICATION = 'portafolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'bhzl9p0xvpsmati0vari',
+        'USER': 'u7dlfw0dol0ymw4v',
+        'PASSWORD':'hRfMuQe837C4oXwBT0NB',
+        'HOST':'bhzl9p0xvpsmati0vari-mysql.services.clever-cloud.com',
+        'PORT':3306
     }
 }
+
 
 
 # Password validation
